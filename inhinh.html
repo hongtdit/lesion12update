@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <script>
+        const H = 5;
+   for(let i = 5; i <= H && i>0; i--){
+    // for(let j = 5;j <= i && j>0; j--){
+        document.write("*");
+     }
+    //   document.write("<br />");
+  
+    </script> -->
+    <script>
+        /**
+         * Đề bài: Nhập vào một số nguyên x. Vẽ hình tam giác dấu * có dạng như ví dụ dưới đây.
+         * ***
+         * **
+         * *
+         */
+        
+          const n = Number(prompt("Nhập n", 1))
+      
+          for (let i = n; i >= 1; i--) {
+            let s = ''
+            for (let j = 1; j <= i; j++) {
+              s = s + '*'
+            }
+            document.write("<br />");
+            document.write(s)
+          }
+      </script>
+    
+</body>
+</html>
